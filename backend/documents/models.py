@@ -21,6 +21,10 @@ class Document(models.Model):
 
 
 
+    def __str__(self): 
+     return f"<Document: {self.title}>"
+
+
     def save(self , *args, **kwargs): 
         if(self.active and self.active_at is None):
             self.active_at = timezone.now()
