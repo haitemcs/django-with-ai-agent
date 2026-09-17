@@ -18,7 +18,7 @@ class Document(models.Model):
     active_at = models.DateTimeField(auto_now_add=False,auto_now=False,blank=True ,null= True)
     created_at = models.DateTimeField(auto_now_add=True)#DB AUTO UPDATE THE field WHEN ITS created 
     updated_at = models.DateTimeField(auto_now=True)#db auto update this field to when its updated 
-
+    
 
 
     def __str__(self): 
@@ -33,7 +33,5 @@ class Document(models.Model):
         super().save(*args, **kwargs)
 
 
-
-
-
-    
+       
+ 
